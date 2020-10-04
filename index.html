@@ -4,434 +4,958 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Uber</title>
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Itremont</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-        <div class="subheader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-4 offset-md-1">
-                        <a href="#" class="subheader_logo"><img src="icons/logo.png" alt="logo"></a>
-                        <div class="subheader_official">Официальный партнер Uber в Москве</div>
+    <section id="up" class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </a>
+ <!--                <div class="header__official">
+                    Официальный представитель
+                    <span>Garmin, Polar, Suunto</span>
+                </div> -->
+                <div class="header__contacts">
+                    <a href="tel:+74999228974" class="header__phone">+7 (963) 003-00-93</a>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
+                </div>
+            </header>
+
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Компьютерный мастер</h1>
+                <h2 class="promo__subheader">ремонт компьютеров любой сложности</h2>
+
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/timer.png" alt="timer">
+                        Быстрый выезд мастера
                     </div>
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/diagnostics.png" alt="diagnostics">
+                        Бесплатная
+                        диагностика
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/messages.png" alt="messages">
+                        Ответим
+                        на все вопросы
+                    </div>
+                </div>
+
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <div class="promo__link">
+                    или
+                    <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
     
-                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
-                        <div class="subheader_call">Звоните нам ежедневно</div>
-                        <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
-                    </div>
-    
-                    <div class="col-6 col-md-3">
-                        <a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
-                        <button class="subheader_btn">заказать звонок</button>
+    <section class="preview">
+        <div class="bgc_blue"></div>
+        <!-- <div class="container"> -->
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="img/tabs/about_us.jpg" alt="about_us">
+                    <div class="tabcontent__descr">
+                        В сравнении с другими компаниями мы работаем на репутацию, а не только ради прибыли. Поэтому нам очень важно именно ваше мнение о нас, мы заинтересованы в максимально быстром, комфортном и недорогом ремонте вашего компьютера.
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
+                <div class="tabcontent">
+                    <img src="img/tabs/diagnostics.jpg" alt="diagnostics">
+                    <div class="tabcontent__descr">
+                        Диагностика нашего компьютерного сервиса для вас абсолютно бесплатна при проведении ремонта. Если проблема незначительна - мастер подскажет что нужно сделать за чашку горячего чая                                 
+                    </div>
+                </div>
 
-    <section class="promo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
-                    <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
-                    <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
-                    <div class="promo_descr">
-                        Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
-                        таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за
-                        пиковое время.
-                        <br><br>
-                        Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у нас
-                        зарабатывают от 80000- 120000 в месяц.
+                <div class="tabcontent">
+                    <img src="img/tabs/fast_repairing.jpg" alt="fast_repairing.jpg">
+                    <div class="tabcontent__descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati, tempore rerum ratione ad qui rem, natus veniam aspernatur magnam accusantium facilis pariatur quia architecto eaque, amet sed odit exercitationem?
                     </div>
-                    <button class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="reasons">
-        <div class="container">
-            <div class="label">преимущества</div>
-            <h2 class="title">8 причин начать работать с нами</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_1.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Никаких наличных, оплата происходит автоматически</div>
-                            <div class="reasons_text">
-                                Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
-                            </div>
-                        </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/guarantee.jpg" alt="guarantee">
+                    <div class="tabcontent__descr">
+                        После обращения в ITremont вы не столкнетесь с проблемой повторного ремонта и тратой денег,так как на все наши работы действует гарантия до 3 лет! В которой компьютерный мастер приедет в день обращения и бесплатно устранит неисправность.                                  
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_2.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Комиссия 8% + БОНУСЫ</div>
-                            <div class="reasons_text">
-                                У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_3.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Высокий доход с гарантированными выплатами</div>
-                            <div class="reasons_text">
-                                Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_4.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Работа в удобное время, никаких графиков</div>
-                            <div class="reasons_text">
-                                Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_5.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Комфортное, прозрачное и простое подключение</div>
-                            <div class="reasons_text">
-                                Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_6.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Всегда большое количество заказов</div>
-                            <div class="reasons_text">
-                                Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_7.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Круглосуточная поддержка</div>
-                            <div class="reasons_text">
-                                В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="icons/reasons/reason_8.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Без шашечек и наклеек</div>
-                            <div class="reasons_text">
-                                Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.
-                            </div>
-                        </div>
+
+                <div class="tabheader">
+                    <!-- <h3>Выберите стиль питания</h3> -->
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">Почему мы ?</div>
+                        <div class="tabheader__item">Диагностика</div>
+                        <div class="tabheader__item">Быстрый ремонт</div>
+                        <div class="tabheader__item">Гарантия</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mobile">
-        <div class="container">
-            <div class="label">возможности</div>
-            <h2 class="title">мобильное приложение убер</h2>
-            <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
 
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="mobile_item mobile_item_1">
-                        <div class="mobile_item_subtitle">
-                            оформление заказа одним касанием
-                        </div>
-                        <div class="mobile_item_plus"></div>
+
+
+    <!-- <section class="advantages">
+        <div class="container">
+            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="advantages__wrapper">
+                <div class="advantages__item">
+                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon">
+                    <div class="advantages__subtitle">
+                        Делимся опытом
+                    </div>
+                    <div class="advantages__descr">
+                        Наши сотрудники всегда готовы поделиться своим опытом, 
+                        так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="mobile_item mobile_item_2">
-                        <div class="mobile_item_subtitle">
-                            надежная подача
-                        </div>
-                        <div class="mobile_item_plus"></div>
+                <div class="advantages__item">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
+                    <div class="advantages__subtitle">
+                        Заботимся о здоровье
+                    </div>
+                    <div class="advantages__descr">
+                        Мы работаем для того, 
+                        чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!           
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="mobile_item mobile_item_3">
-                        <div class="mobile_item_subtitle">
-                            прозрачные цены
-                        </div>
-                        <div class="mobile_item_plus"></div>
+                <div class="advantages__item">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon">
+                    <div class="advantages__subtitle">
+                        Учим бегать
+                    </div>
+                    <div class="advantages__descr">
+                        Помогаем с обучением 
+                        правильной технике бега!<br>
+                        Дружим с крупнейшей школой бега в России - 
+                        <a href="#">I LOVE RUNNING.</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="mobile_item mobile_item_4">
-                        <div class="mobile_item_subtitle">
-                            безналичная оплата
+            </div>
+        </div>
+    </section>
+ -->
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title_left">
+                Получите бесплатную консультацию<br>
+                по ремонту 
+            </h2>
+            <div class="consultation__descr">
+                Просто заполните форму заявки<br> 
+                и мы перезвоним вам в течении 10 минут
+            </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон"> 
+               <!--  <input name="email" required placeholder="Опишите проблему" type="text"> -->
+
+                <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <h2 class="title title_mb20">Наша лаборатория</h2>
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/lab0.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/lab1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/lab2.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id = "catalog">
+        <div class="container">
+            <h2 class="title">Каталог услуг</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>ремонт компьютеров</div></li>
+                <li class="catalog__tab"><div>ремонт ноутбуков</div></li>
+                <!-- <li class="catalog__tab"><div>ремонт смартфонов</div></li> -->
+            </ul>
+            
+
+            <div class="catalog__content catalog__content_active">
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/windows_img.jpg" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Установка Windows</div>
+                            <div class="catalog-item__descr">Windows XP/Vista/7/8/10, настройка BIOS, установка драйверов.</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <div class="mobile_item_plus"></div>
+                        <ul class="catalog-item__list">
+                            <span>Когда нужна переустановка windows?</span>
+                            <li>При частом появлении «синего экрана» с ошибками;
+                            </li>
+                            <li>
+                                Если ОС Windows медленно грузится, либо отказывается грузиться;
+                            </li>
+                            <li>
+                                При замене материальной платы, когда ОС отказывается загружаться;</li>
+                            <li>
+                                При повреждении MFT (главной файловой таблицы) на жестком диске.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">2100 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="mobile_item mobile_item_5">
-                        <div class="mobile_item_subtitle">
-                            обратная связь
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/ssd.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Устранение неисправностей жесткого диска</div>
+                            <div class="catalog-item__descr">Аппаратная диагностика диска</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <div class="mobile_item_plus"></div>
+                        <ul class="catalog-item__list ">
+                            <span>Диагностика на предмет:</span>
+                            <li>Разрушение служебной информации;
+                            </li>
+                            <li>
+                                Выхода из строя платы электроники (контроллера);
+                            </li>
+                            <li>
+                                Повреждения БМГ (блока магнитных головок);</li>
+                            <li>
+                                Механических повреждений;
+                            </li>
+                     
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">900 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="mobile_item mobile_item_6">
-                        <div class="mobile_item_subtitle">
-                            разделить стоимость поездки
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/replacement.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Поиск и замена комплектующих</div>
+                            <div class="catalog-item__descr">Поиск ,замена, установка комплектующих по требованию заказчика
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <div class="mobile_item_plus"></div>
+                        <ul class="catalog-item__list">
+                            <span>Этапы сборки компьюетра:</span>
+                            <li>Оценка требований заказчика;
+                            </li>
+                            <li>
+                               Поиск комплектующих;
+                            </li>
+                            <li>
+                                Установка комплектующих;</li>
+                            <li>
+                                Первый запуск;
+                            </li>
+                            <li>
+                                Установка необходимых драйверов.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1600 руб.</div>
+                            <div class="catalog-item__price">350 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/data_recovery_img.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Восстановление удаленных  или поврежденных данных</div>
+                            <div class="catalog-item__descr">Восстановление данных с жесткого диска,карт памяти,флеш носителей, RAID-массивов, SSD дисков
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <span>Этапы восстановления данных:</span>
+                            <li>
+                                Выезд мастера для оценки вашего носителя и определения состояния устройства и данных;</li>
+                            <li>
+                                Согласование стоймости работы после первичной консультации и оценки.
+                            </li>
+                            <li>
+                                Устранение любых повреждений и восстановление ваших данных;
+                            </li>
+                            <li>
+                                Копирование восстановленных данных и доставка заказчику;
+                            </li>
+                            <a href="#" class="catalog-item__back">НАЗАД</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">2400 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/office_img.jpg" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Установка MS Office</div>
+                            <div class="catalog-item__descr">Установка MS Office
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <span>Microsoft Office содержит приложения:</span>
+                            <li>Word;
+                            </li>
+                            <li>
+                                Excel;
+                            </li>
+                            <li>
+                                PowerPoint;
+                            </li>
+                            <li>
+                                Outlook;
+                            </li>
+                            <li>
+                                Access;
+                            </li>
+                            <li>
+                                Publisher;
+                            </li>
+                            <li>
+                                InfoPath;
+                            </li>
+                            <li>
+                                Visio.
+                            </li>
+                            <a href="#" class="catalog-item__back">НАЗАД</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">600 руб.</div>
+                            <div class="catalog-item__price">200 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/virus_img.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Удаление вирусов</div>
+                            <div class="catalog-item__descr">Удаление вирусов,баннеров,спамов, шифраторов, рекламы в браузере</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <span>Комплекс по удалению вирусов включает в себя:</span>
+                            <li>Удаление вирусов, установка антивируса, а также настройка;
+                            </li>
+                            <li>
+                                Настройка родительского контроля;</li>
+                            <li>
+                                Блокировка вредоносных сайтов;
+                            </li>
+                            <li>
+                                Установка плагинов блокирующих рекламу;
+                            </li>
+                            <li>
+                                Удаление баннеров с рабочего стола.
+                            </li>
+                            <a href="#" class="catalog-item__back">НАЗАД</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1700 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/windows_img.jpg" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Установка Windows</div>
+                            <div class="catalog-item__descr">Windows XP/Vista/7/8/10, настройка BIOS, установка драйверов.</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <span>Когда нужна переустановка windows?</span>
+                            <li>При частом появлении «синего экрана» с ошибками;
+                            </li>
+                            <li>
+                                Если ОС Windows медленно грузится, либо отказывается грузиться;
+                            </li>
+                            <li>
+                                При замене материальной платы, когда ОС отказывается загружаться;</li>
+                            <li>
+                                При повреждении MFT (главной файловой таблицы) на жестком диске.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">2100 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/motherboard.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Ремонт материнской платы</div>
+                            <div class="catalog-item__descr">Замена чипов, элементной части материнской платы.</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <span>Этапы ремонта материнской платы:</span>
+                            <li> Аппаратная диагностика и выявление неисправностей;
+                            </li>
+                            <li>
+                            Ремонт и замена комплектующих;
+                            </li>
+                            
+                            <li>
+                            Перепрошивка BIOS.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">2000 руб.</div>
+                            <div class="catalog-item__price">500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/replacement_img.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Сломанный экран</div>
+                            <div class="catalog-item__descr">Замена матрицы.</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <span>При разбитом/сломанном экране требуется:</span>
+                            <li>Диагностика неисправностей;
+                            </li>
+                            <li>
+                            Подбор и замена матрицы;
+                            </li>
+                            <li>
+                            Монтаж/Демонтаж в устройство;</li>
+                            <li>
+                            Настройка работоспособности.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1700 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/hot.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">При перегреве ноутбука</div>
+                            <div class="catalog-item__descr">Устранение лагов и высокой температуры</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <span>Полное охлаждение:</span>
+                            <li>Чистка комплектующих;
+                            </li>
+                            <li>
+                            Замена термопасты/термопрокладок;
+                            </li>
+                            <li>
+                            Установка/Замена куллера;</li>
+                            <li>
+                            Удаление окиси от контактов.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1800 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/keyboard.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Замена клавиатуры</div>
+                            <div class="catalog-item__descr">При залитии жидкостями</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <span>Ремонт клавиатурной панели:</span>
+                            <li>Замена не работающих клавиш,либо полностью клавиатурной панели;
+                            </li>
+                            <li>
+                            Удаление окиси;
+                            </li>
+                            <li>
+                            Замена соеденяющих шлейфов;</li>
+                            <li>
+                            Демонтаж и монтаж.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1500 руб.</div>
+                            <div class="catalog-item__price">300 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/virus_img.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Дефрагментация жесткого диска</div>
+                            <div class="catalog-item__descr">Оптимизация системы для быстрой работоспособности устройства</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <span>При сбоях и ошибках в системе требуется:</span>
+                            <li>Полная дефрагментация жесткого диска для правильной работы системы;
+                            </li>
+                            <li>
+                            Удаение мусорных файлов;
+                            </li>
+                            <li>
+                            Настройка разделов и распределение памяти для ускорения работоспособности;</li>
+                            <li>
+                            Настройка и удаление ошибок реестра.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+            </div>
+
+         <!--    <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                            </li>
+                            <li>
+                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                            </li>
+                            <li>
+                            Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>
+                            Вы сможете посмотреть данные по 10 тренировкам.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                            </li>
+                            <li>
+                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                            </li>
+                            <li>
+                            Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>
+                            Вы сможете посмотреть данные по 10 тренировкам.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                            </li>
+                            <li>
+                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                            </li>
+                            <li>
+                            Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>
+                            Вы сможете посмотреть данные по 10 тренировкам.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                            </li>
+                            <li>
+                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                            </li>
+                            <li>
+                            Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>
+                            Вы сможете посмотреть данные по 10 тренировкам.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/com.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                            </li>
+                            <li>
+                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                            </li>
+                            <li>
+                            Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>
+                            Вы сможете посмотреть данные по 10 тренировкам.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                            </li>
+                            <li>
+                            Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                            </li>
+                            <li>
+                            Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>
+                            Вы сможете посмотреть данные по 10 тренировкам.
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">заказать ремонт</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="feed">
+        <div class="container">
+            <h2 class="title">отзывы клиентов</h2>
+            <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
+                <img src="img/feed_1.png" alt="Ирина Иванченко" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subtitle">Ирина Иванченко</div>
+                    <div class="feed__count">Переустановка Windows, замена комплектующих</div>
+                    <div class="feed__descr">ITremont выполнили ремонт в срок, быстро и квалифицированно. Большое спасибо! Попутно нашли пару небольших проблемок и устранили их. Советую данный сервис!
+                    
+                    <br><br>
+                    Через некоторое время решила обновить комплектующие - не раздумывая обратилась туда же.
+                    <br><br>  
+                    Спасибо, ITremont! 
+                    </div>
+                </div>
+            </div>
+            <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
+                <img src="img/feed_2.png" alt="Иван Сёмочкин" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subtitle">Иван Сёмочкин</div>
+                    <div class="feed__count">Замена материнской платы</div>
+                    <div class="feed__descr">Спасли мой (казалось мне) безнадёжный компьютер, отремонтировали профессионально и быстро. Рекомендую, как качественный компьютерный сервис.
+                    <br><br> 
+                    С ними успел подготовиться к своему учебному проекту! Спасибо!!!
+                    </div>
+                </div>
+            </div>
+            <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
+                <img src="img/feed_3.png" alt="Юлия Дашкина" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subtitle">Тамара Павловна</div>
+                    <div class="feed__count">Устранение медленной работы ноутбука</div>
+                    <div class="feed__descr">Сервис отлично справилился с необходимой работой. Быстро приехал мастер, провел диагностику, обнаружил проблемы и устранил проблему. Все доступно объяснил мне и внукам, был вежлив и компитентен. Ноутбук восстановлен. Спасибо за работу. Рекомендую кто ищет профессиональный сервис по ремонту компьютерной техники.
+
+                    <br><br> 
+                    Спасибо данному сервису! 
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="choice">
-        <div class="container">
-            <div class="black"></div>
-            <div class="label label_white">возможности</div>
-            <h2 class="title title_white hidden-320">Выбор - отличная штука!</h2>
-            <div class="subtitle subtitle_white hidden-320">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
 
-            <img src="img/car.png" alt="uber car" class="choice_img">
-            <div class="choice_descr">
-                Машины на каждый день.<br>
-                Лучше, быстрее и дешевле, чем такси
-            </div>
-        </div>
-    </section>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.388812889491!2d60.62700131597507!3d56.89072198087294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16d8c79960e39%3A0xae2d90a84eef9e01!2z0YPQuy4g0KHRgtCw0YDRi9GFINCR0L7Qu9GM0YjQtdCy0LjQutC-0LIsIDE50JAsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0KHQstC10YDQtNC70L7QstGB0LrQsNGPINC-0LHQuy4sIDYyMDAxNw!5e0!3m2!1sru!2sru!4v1600591092399!5m2!1sru!2sru" width="100%" height="630" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-    <section class="require" id="require">
-        <div class="container">
-            <div class="label">возможности</div>
-            <h2 class="title">условия и требования</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="require_block">
-                    <div class="require_title">
-                        УСЛОВИЯ: со своим авто:
-                    </div>
-                    <ul class="require_list">
-                        <li>Подключаем к системе UBER  под 10%.</li>
-                        <li>
-                            Ни каких взносов  0%!
-                        </li>
-                        <li>
-                            Можем подключать удаленно без приезда в офис
-                        </li>
-                        <li>
-                            ИП не требуется
-                        </li>
-                        <li>
-                            Заказы распределяются без учета рейтинга ближай-<br>шим водителям
-                        </li>
-                        <li>
-                            Работа только по безналичному расчету
-                        </li>
-                        <li>
-                            Деньги перечисляем на карту водителю или наличны-<br>ми в офисе
-                        </li>
-                    </ul>
-                    <div class="require_descr">
-                        В день заработок составляет 7000-12000р + бонус 3000т<br> рублей
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="require_block">
-                    <div class="require_title">
-                        УСЛОВИЯ: на авто компании:
-                    </div>
-                    <ul class="require_list">
-                        <li>
-                            Предоставляем авто без залога
-                        </li>
-                        <li>
-                            Без ежедневных выплат по аренде
-                        </li>
-                        <li>
-                            Среда пятница и суббота работа на компанию остальные дни вы работаете на себя
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="require_block require_block_nmb warning">
-                    <div class="require_title">
-                        ТРЕБОВАНИЕ:
-                    </div>
-                    <ul class="require_list">
-                        <li>
-                            Наличие автомобиля без рекламы
-                        </li>
-                        <li>
-                            Автомобиль не должен быть желтый и не с желтыми номерами
-                        </li>
-                        <li>
-                            Машина не старше 3 лет
-                        </li>
-                        <li>
-                            Стаж вождения не менее 3 лет
-                        </li>
-                        <li>
-                            Девайс на системе андроид 4.0и выше(самсунг)
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="require_block require_block_nmb warning">
-                    <div class="require_title">
-                        ДОКУМЕНТЫ:
-                    </div>
-                    <ul class="require_list">
-                        <li>
-                            Права 2 стороны
-                        </li>
-                        <li>
-                            Паспорт лицевая сторона
-                        </li>
-                        <li>
-                            СтС
-                        </li>
-                        <li>
-                            Лицензия( если есть)
-                        </li>
-                        <li>
-                            Номер телефона
-                        </li>
-                        <li>
-                            Номер карты для перечисления денег(указать в письме)!
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="world">
-        <div class="container">
-            <div class="label label_white label_min">города</div>
-            <h2 class="title title_white">По всему миру</h2>
-            <div class="subtitle subtitle_white">Мы в вашем городе и по всему миру</div>
-
-            <a href="#" class="world_link">посмотреть все города</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer_divider"></div>
-        <div class="footer_wrapper">
-            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
-            <div>
-                <div class="footer_social">
-                    <a href="#" class="footer_social_item">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="footer_social_item">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="footer_social_item">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="footer_social_item">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="footer_links">
-                    <div class="footer_links_main">
-                        <a href="#">на главную</a>
-                        <a href="#">города</a>
-                        <a href="#">для водителей</a>
-                    </div>
-                    <div class="footer_links_sub">
-                        <a href="#">центр поддержки</a>
-                        <a href="#">вакансии</a>
-                        <a href="#">разработчики</a>
-                        <a href="#">блог</a>
-                        <a href="#">о нас</a>
-                    </div>
-                    <a href="#" class="footer_links_lang">Русский</a>
-                </div>
-            </div>
-            <div>
-                <div class="footer_mobile">
-                    <a href="#">
-                        <img src="img/app_store.png" alt="App Store">
-                    </a>
-                    <a href="#">
-                        <img src="img/google_play.png" alt="Google play">
-                    </a>
-                    <a href="#">
-                        <img src="img/windows_store.png" alt="Windows store">
-                    </a>
-                </div>
+        <div class="footer__info">
+            <address class="footer__addr">Екатеринбург, Старых большевиков, д.19А</address>
+            <a class="footer__phone" href="tel:84999228974">8 (963) 003-00-93</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text"> 
+                <input name="phone" placeholder="Ваш телефон"> 
+                <!-- <input name="email" placeholder="Ваш E-mail" type="email">  -->
+
+                <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш ремонт:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон"> 
+                <!-- <input name="email" required placeholder="Ваш E-mail" type="email">  -->
+
+                <button class="button button_submit">Оформить ремонт</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
