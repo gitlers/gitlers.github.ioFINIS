@@ -49,6 +49,8 @@ $(document).ready(function(){
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+        
+
         responsive: [
             {
                 breakpoint: 992,
@@ -56,10 +58,32 @@ $(document).ready(function(){
                     dots: true,
                     arrows: false
                 }
+            },
+
+            {
+                breakpoint: 600,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            },
+
+            {
+                breakpoint: 480,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
             }
+
         ]
     });
     
+
+
+
+
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
           .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -111,7 +135,7 @@ $(document).ready(function(){
             messages: {
                 name: {
                     required: "Пожалуйста, введите свое имя",
-                    minlength: jQuery.validator.format("Введите {0} символа!")
+                    minlength: jQuery.validator.format("Введите не менее {0} символов")
                   },
                 phone: "Пожалуйста, введите свой номер телефона",
                 email: {
